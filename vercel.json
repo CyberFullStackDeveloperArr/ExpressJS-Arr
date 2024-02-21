@@ -1,9 +1,13 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "./index.js",
-            "use": "@vercel/node"
-        }
+      { "src": "js/script.js", "use": "@vercel/node" },
+      { "src": "index.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/js/script.js", "dest": "/js/script.js" },
+      { "src": "/css/style.css", "dest": "/css/style.css" },
+      { "src": "/img/foto.png", "dest": "/img/foto.png" }
     ]
-}
+  }
+  
